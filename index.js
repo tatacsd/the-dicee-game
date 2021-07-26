@@ -8,8 +8,8 @@ function getRandomNumber() {
 let randomNumber1 = getRandomNumber();
 let randomNumber2 = getRandomNumber();
 
-let randomImageSource1 = `images/dice${randomNumber1}.png`;
-let randomImageSource2 = `images/dice${randomNumber2}.png`;
+let randomImageSource1 = `./images/dice${randomNumber1}.png`;
+let randomImageSource2 = `./images/dice${randomNumber2}.png`;
 
 // get the target
 let img1 = document
