@@ -2,11 +2,16 @@
 function getRandomNumber() {
   const max = 6;
   const min = 1;
-  return Math.floor(Math.random() * (max + 1 - min) + min);
+  return Math.floor(Math.random() * max + min);
 }
 
-let img1 = `dice${getRandomNumber()}.png`;
-let img2 = `dice${getRandomNumber()}.png`;
+let randomImageSource1 = `images/dice${getRandomNumber()}.png`;
+let randomImageSource2 = `images/dice${getRandomNumber()}.png`;
 
-console.log(img1);
-console.log(img2);
+// get the target
+let img1 = document
+  .querySelector(".img1")
+  .setAttribute("src", randomImageSource1);
+let img2 = document
+  .querySelector(".img2")
+  .setAttribute("src", randomImageSource1);
